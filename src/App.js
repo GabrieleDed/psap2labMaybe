@@ -1,35 +1,11 @@
 import React, {Component} from 'react'
 import Table from './Table'
+import Form from './Form'
 
 class App extends Component {
     state = {
         characters: [
         
-            {
-                fname: 'Charlie',
-                lname: 'Brown',
-                possition: 'Janitor',
-                department: 'Health and safety'
-              },
-              {
-                  fname: 'Mac',
-                  lname: 'Divian',
-                  possition: 'Bouncer',
-                  department: 'Security'
-              },
-              {
-                  fname: 'Dee',
-                  lname: 'Vila',
-                  possition: 'Actress',
-                  department: 'Broadcasting'
-              },
-              {
-                  fname: 'Dennis',
-                  lname: 'Shuller',
-                  possition: 'Bartender',
-                  department: 'Food and Alcohol'
-              },
-          
         ],
       }
       render() {

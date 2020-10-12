@@ -1,7 +1,17 @@
 import React, {Component} from 'react'
 
 const TableHeader = () => {
-    return <tbody/>
+    return (
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Position</th>
+          <th>Department</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+    );
   }
 
   const TableBody = (props) => {
@@ -12,6 +22,9 @@ const TableHeader = () => {
           <td>{row.lname}</td>
           <td>{row.position}</td>
           <td>{row.department}</td>
+          <td>
+            <button onClick={() => props.removeCharacter(index)}>Delete</button>
+          </td>
         </tr>
       )
     })
