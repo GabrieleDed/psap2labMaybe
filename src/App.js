@@ -5,28 +5,28 @@ class App extends Component {
     render() {
       const characters = [
         {
-          FName: 'Charlie',
-          LName: 'Brown',
-          Possition: 'Janitor',
-          Department: 'Health and safety'
+          fname: 'Charlie',
+          lname: 'Brown',
+          possition: 'Janitor',
+          department: 'Health and safety'
         },
         {
-            FName: 'Mac',
-            LName: 'Divian',
-            Possition: 'Bouncer',
-            Department: 'Security'
+            fname: 'Mac',
+            lname: 'Divian',
+            possition: 'Bouncer',
+            department: 'Security'
         },
         {
-            FName: 'Dee',
-            LName: 'Vila',
-            Possition: 'Actress',
-            Department: 'Broadcasting'
+            fname: 'Dee',
+            lname: 'Vila',
+            possition: 'Actress',
+            department: 'Broadcasting'
         },
         {
-            FName: 'Dennis',
-            LName: 'Shuller',
-            Possition: 'Bartender',
-            Department: 'Food and Alcohol'
+            fname: 'Dennis',
+            lname: 'Shuller',
+            possition: 'Bartender',
+            department: 'Food and Alcohol'
         },
       ]
   
