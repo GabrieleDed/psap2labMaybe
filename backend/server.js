@@ -5,7 +5,7 @@ let bodyParser = require('body-parser');
 let dbConfig = require('./database/db');
 
 // Express Route
-const employeeRoute = require('../backend/routes/employee.route')
+const employeeRoute = require('./routes/employee.route')
 
 // Connecting mongoDB Database
 mongoose.Promise = global.Promise;

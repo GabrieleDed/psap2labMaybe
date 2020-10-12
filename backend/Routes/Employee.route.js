@@ -3,7 +3,7 @@ let mongoose = require('mongoose'),
   router = express.Router();
 
 // Employee Model
-let employeeSchema = require('../models/Employee');
+let employeeSchema = require('../models/employee');
 
 // CREATE Employee
 router.route('/create-employee').post((req, res, next) => {
