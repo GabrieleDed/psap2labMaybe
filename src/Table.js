@@ -19,18 +19,6 @@ const TableHeader = () => {
     return <tbody>{rows}</tbody>
   }
 
-  class Table extends Component {
-    render() {
-      const {characterData} = this.props
-  
-      return (
-        <table>
-          <TableHeader />
-          <TableBody characterData={characterData} />
-        </table>
-      )
-    }
-  }
   const Table = (props) => {
     const {characterData, removeCharacter} = props
   
