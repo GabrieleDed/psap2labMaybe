@@ -39,6 +39,14 @@ export default class CreateEmployee extends Component {
 
   onSubmit(e) {
     e.preventDefault()
+    const studentObject = {
+      fname: this.state.fname,
+      lname: this.state.lname,
+      position: this.state.position,
+      department: this.state.department
+    };
+    axios.post('http://localhost:4000/employees/create-employee', employeeObject)
+      .then(res => console.log(res.data));
 
     console.log(`Employee successfully created!`);
     console.log(`FName: ${this.state.fname}`);
@@ -46,7 +54,7 @@ export default class CreateEmployee extends Component {
     console.log(`Position: ${this.state.position}`);
     console.log(`Department: ${this.state.department}`);
 
-    this.setState({fname: '', Lname: '' , position: '', department: '' })
+    this.setState({fname: '', lname: '' , position: '', department: '' })
   }
 
   render() {
